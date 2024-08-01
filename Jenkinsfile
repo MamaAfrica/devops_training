@@ -24,6 +24,7 @@ pipeline{
                     sudo mv /home/ubuntu/introtodevops-*.tar.gz /var/www/introtodevops/;
                     cd /var/www/introtodevops/;
                     sudo tar -xf introtodevops-*.tar.gz;
+                    cd /var/www/introtodevops/introtodevops/;
                     sudo chmod +x deploy.sh;
                     ./deploy.sh; 
                     ''', 
