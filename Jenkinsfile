@@ -8,7 +8,7 @@ pipeline{
         stage('Package'){
             steps{
                 sh '''
-                tar czf introtodevops-$BUILD_NUMBER.tar.gz pages public styles jsconfig.json next.config.mjs package-lock.json package.json deploy.sh
+                tar czf introtodevops-$BUILD_NUMBER.tar.gz introtodevops
                 '''
             }
         }
